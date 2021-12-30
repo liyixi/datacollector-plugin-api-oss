@@ -22,30 +22,13 @@
   <artifactId>streamsets-datacollector-plugin-api</artifactId>
   <version>3.22.2</version>
   <description>StreamSets Data Collector Plugin API</description>
+
   <modules>
     <module>streamsets-datacollector-spark-api</module>
   </modules>
+
   <name>StreamSets Data Collector Plugin API</name>
   <packaging>pom</packaging>
-  <url>http://www.streamsets.com</url>
-  <scm>
-    <url>https://github.com/streamsets/datacollector-plugin-api</url>
-  </scm>
-
-  <developers>
-    <!-- TODO add rest of team-->
-    <developer>
-      <id>hshreedharan</id>
-      <name>Hari Shreedharan</name>
-      <email>hshreedharan@streamsets.com</email>
-      <timezone>America/Los_Angeles</timezone>
-    </developer>
-  </developers>
-
-  <organization>
-    <name>StreamSets</name>
-    <url>http://www.streamsets.com</url>
-  </organization>
 
   <licenses>
     <license>
@@ -81,27 +64,27 @@
     <slf4j.version>1.7.7</slf4j.version>
   </properties>
 
-  <profiles>
-    <profile>
-      <id>sign</id>
-      <build>
-        <plugins>
-          <plugin>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-gpg-plugin</artifactId>
-            <executions>
-              <execution>
-                <phase>verify</phase>
-                <goals>
-                  <goal>sign</goal>
-                </goals>
-              </execution>
-            </executions>
-          </plugin>
-        </plugins>
-      </build>
-    </profile>
-  </profiles>
+<!--  <profiles>-->
+<!--    <profile>-->
+<!--      <id>sign</id>-->
+<!--      <build>-->
+<!--        <plugins>-->
+<!--          <plugin>-->
+<!--            <groupId>org.apache.maven.plugins</groupId>-->
+<!--            <artifactId>maven-gpg-plugin</artifactId>-->
+<!--            <executions>-->
+<!--              <execution>-->
+<!--                <phase>verify</phase>-->
+<!--                <goals>-->
+<!--                  <goal>sign</goal>-->
+<!--                </goals>-->
+<!--              </execution>-->
+<!--            </executions>-->
+<!--          </plugin>-->
+<!--        </plugins>-->
+<!--      </build>-->
+<!--    </profile>-->
+<!--  </profiles>-->
 
   <build>
 
